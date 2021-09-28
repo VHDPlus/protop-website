@@ -26,7 +26,7 @@ function Home() {
         transform: `translateY(60px)`,
         top: 0,
         zIndex: -10
-    }}/>;
+    }} />;
 
     useEffect(() => {
         if (ExecutionEnvironment.canUseDOM) {
@@ -47,7 +47,7 @@ function Home() {
     useEffect(() => {
         if (!ExecutionEnvironment.canUseDOM) return;
         const observer = new MutationObserver((mutations) => {
-            mutations.forEach(function(mutation) {
+            mutations.forEach(function (mutation) {
                 if (mutation.type == "attributes"
                     && mutation.attributeName === "data-theme") {
                     updateDarkModeClass();
@@ -74,19 +74,55 @@ function Home() {
                 fallback={fallback}>
                 {() => (
                     <Suspense fallback={fallback}>
-                        <LazyThreeJSAnimationShader/>
+                        <LazyThreeJSAnimationShader />
                     </Suspense>
                 )}
             </BrowserOnly>
 
             <header className={classnames("hero", styles.heroBanner)}>
-            <Container>
-              <div className={styles.promoSection}>
-                <h1 className={styles.promoTitle}>Protop Solutions</h1>
-                <p className={styles.promoSubtitle}>Professional Technology for Ordinary People</p>
-              </div>
-            </Container>
-          </header>
+                <Container>
+                    <div className={styles.promoSection}>
+                        <h1 className={styles.promoTitle} 
+                            data-aos="zoom-y-out"
+                            data-aos-delay="50">Protop Solutions</h1>
+                        <p className={styles.promoSubtitle}
+                            data-aos="zoom-y-out"
+                            data-aos-delay="100">Professional Technology for Ordinary People</p>
+                    </div>
+
+                <Link
+                  className={classnames("button button--primary hideMobile", styles.startButton)}
+                  to={"/docs/getstarted#install-vhdplus-ide"}
+                  data-aos="zoom-y-out"
+                  data-aos-delay="150">
+                  Read More
+                </Link>
+                <Link
+                  className={classnames("button button--secondary", styles.startButtonSecondary, styles.startButton)}
+                  to={"/docs/getstarted"}
+                  data-aos="zoom-y-out"
+                  data-aos-delay="200">
+                  Contact Us
+                </Link>
+                </Container>
+            </header>
+
+            <main>
+                <Container data-aos="fade-up" className="padding-vert--lg">
+                    <Row className={styles.features}>
+                        <Col className="display-flex">
+                            <img src="/static/img/company.png"/>
+                        </Col>
+                        <Col className="display-flex">
+                            <img src="/static/img/customer_pur.png"/>
+                        </Col>
+                        <Col className="display-flex">
+                            <img src="/static/img/university_or.png"/>
+                        </Col>
+                    </Row>
+                </Container>
+            </main>
+            
         </Layout>
     );
 }

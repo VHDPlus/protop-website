@@ -18,3 +18,7 @@
     --ifm-hero-background-color: transparent;
     /*--ifm-code-background: 95%;*/
 }
+
+.display-flex{
+    display: flex;
+}

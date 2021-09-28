@@ -1,5 +1,5 @@
 .heroBanner {
-  padding: 4rem 0;
+  padding: 8rem 0 8rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -11,4 +11,14 @@
 
 .promoSubtitle{
   font-size: 20pt;
+}
+
+.startButton{
+  margin: 5px;
+  font-size: 20pt;
+}
+
+.features img{
+  margin: auto;
+  max-width: 200px;
 }
