@@ -1,0 +1,14 @@
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.promoTitle{
+  font-size: 50pt;
+}
+
+.promoSubtitle{
+  font-size: 20pt;
+}
