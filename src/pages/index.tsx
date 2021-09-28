@@ -10,7 +10,6 @@ import styles from "../css/index.module.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "tailwindcss/tailwind.css"
 
 const LazyThreeJSAnimationShader = React.lazy(() => import("../shape/ThreeJSAnimationShader"));
 
