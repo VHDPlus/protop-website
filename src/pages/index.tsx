@@ -110,24 +110,41 @@ function Home() {
             </header>
 
             <main>
-                <Container data-aos="fade-up" className={classnames("padding--lg", styles.features)}>
-                    <Row className={classnames("justify-content-md-center")}>
-                        <Col>
-                            <img src="/static/img/company.png" />
-                        </Col>
-                        <Col>
-                            <img src="/static/img/customer_pur.png" />
-                        </Col>
-                        <Col>
-                            <img src="/static/img/university_or.png" />
-                        </Col>
-                    </Row>
-                    <Row className="display-flex padding-vert--md">
-                        <Col>
-                            <h2 className="text-center">Trusted by Companies, Universities and other creative minds</h2>
-                        </Col>
-                    </Row>
-                </Container>
+                <section className={styles.part}>
+                    <Container data-aos="fade-up" data-aos-delay="100" className={classnames(styles.features)}>
+                        <Row className={classnames("justify-content-md-center")}>
+                            <Col>
+                                <img src="/static/img/company.png" />
+                            </Col>
+                            <Col>
+                                <img src="/static/img/customer_pur.png" />
+                            </Col>
+                            <Col>
+                                <img src="/static/img/university_or.png" />
+                            </Col>
+                        </Row>
+                        <Row className="display-flex padding-vert--md">
+                            <Col>
+                                <h2 className="text-center">Trusted by Companies, Universities and other creative minds</h2>
+                            </Col>
+                        </Row>
+                    </Container>
+
+                </section>
+
+                <section className={styles.part}>
+                    <Container>
+                        <Row>
+                            <Col data-aos="fade-right" data-aos-delay="100" className="padding--lg">
+                                <h2>Development</h2>
+                                Lorem ipsum nugget
+                            </Col>
+                            <Col data-aos="fade-left" data-aos-delay="100">
+                                <img src="/static/img/Development.png" />
+                            </Col>
+                        </Row>
+                    </Container>
+                </section>
             </main>
 
         </Layout>

@@ -27,6 +27,12 @@
   margin: 5px;
 }
 
+.part{
+  padding-top: 6em;
+  padding-bottom: 6em;
+  overflow: hidden;
+}
+
 .features{
   max-width: 42rem;
 }
@@ -42,5 +48,11 @@
 
   .promoTitleTwo{
     font-size: 4rem;
+  }
+
+  .part{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    overflow: hidden;
   }
 }

@@ -17,18 +17,18 @@
     --ifm-code-font-size: 95%;
     --ifm-hero-background-color: transparent;
 
-    --ifm-heading-color: rgb(39, 39, 39);
+    --ifm-heading-color: var(--ifm-color-content);
     /*--ifm-code-background: 95%;*/
 }
 
 html[data-theme='dark'] * {
     --ifm-footer-link-color: rgb(219, 219, 219);
     --ifm-button-color: white;
-    --ifm-heading-color: rgb(216, 216, 216);
   }
 
 body{
     background-color: transparent;
+    color: var(--ifm-color-content);
 }
 
 a{
