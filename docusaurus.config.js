@@ -40,6 +40,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
+        hideOnScroll: false,
         title: 'Protop Solutions',
         logo: {
           alt: 'My Site Logo',

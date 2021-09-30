@@ -32,6 +32,7 @@ a:hover {
     text-decoration: var(--ifm-link-hover-decoration);
 }
 
-nav{
+nav, .navbar{
     color: var(--ifm-navbar-link-color);
+    position: sticky;
 }
