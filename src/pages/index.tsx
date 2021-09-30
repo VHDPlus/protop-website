@@ -81,47 +81,55 @@ function Home() {
             <header className={classnames("hero", styles.heroBanner)}>
                 <Container>
                     <div className={styles.promoSection}>
-                        <h1 className={styles.promoTitle} 
+                        <h1 className={styles.promoTitle}
                             data-aos="zoom-y-out"
-                            data-aos-delay="50">Protop Solutions</h1>
+                            data-aos-delay="50">Protop</h1>
+                        <h1 className={styles.promoTitleTwo}
+                            data-aos="zoom-y-out"
+                            data-aos-delay="50">Solutions</h1>
                         <p className={styles.promoSubtitle}
                             data-aos="zoom-y-out"
                             data-aos-delay="100">Professional Technology for Ordinary People</p>
                     </div>
 
-                <Link
-                  className={classnames("button button--primary hideMobile", styles.startButton)}
-                  to={"/docs/getstarted#install-vhdplus-ide"}
-                  data-aos="zoom-y-out"
-                  data-aos-delay="150">
-                  Read More
-                </Link>
-                <Link
-                  className={classnames("button button--secondary", styles.startButtonSecondary, styles.startButton)}
-                  to={"/docs/getstarted"}
-                  data-aos="zoom-y-out"
-                  data-aos-delay="200">
-                  Contact Us
-                </Link>
+                    <Link
+                        className={classnames("button button--primary hideMobile", styles.startButton)}
+                        to={"/docs/getstarted#install-vhdplus-ide"}
+                        data-aos="zoom-y-out"
+                        data-aos-delay="150">
+                        Read More
+                    </Link>
+                    <Link
+                        className={classnames("button button--secondary", styles.startButtonSecondary, styles.startButton)}
+                        to={"/docs/getstarted"}
+                        data-aos="zoom-y-out"
+                        data-aos-delay="200">
+                        Contact Us
+                    </Link>
                 </Container>
             </header>
 
             <main>
-                <Container data-aos="fade-up" className="padding-vert--lg">
-                    <Row className={styles.features}>
-                        <Col className="display-flex">
-                            <img src="/static/img/company.png"/>
+                <Container data-aos="fade-up" className="padding--lg">
+                    <Row className={classnames("justify-content-md-center",styles.features)}>
+                        <Col md="auto">
+                            <img src="/static/img/company.png" />
                         </Col>
-                        <Col className="display-flex">
-                            <img src="/static/img/customer_pur.png"/>
+                        <Col md="auto">
+                            <img src="/static/img/customer_pur.png" />
                         </Col>
-                        <Col className="display-flex">
-                            <img src="/static/img/university_or.png"/>
+                        <Col md="auto">
+                            <img src="/static/img/university_or.png" />
+                        </Col>
+                    </Row>
+                    <Row className="display-flex padding-vert--md">
+                        <Col>
+                            <h2 className="text-center">Trusted by Companies, Universities and other creative minds</h2>
                         </Col>
                     </Row>
                 </Container>
             </main>
-            
+
         </Layout>
     );
 }

@@ -19,6 +19,19 @@
     /*--ifm-code-background: 95%;*/
 }
 
-.display-flex{
-    display: flex;
+body{
+    background-color: transparent;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--ifm-link-hover-color);
+    text-decoration: var(--ifm-link-hover-decoration);
+}
+
+nav{
+    color: var(--ifm-navbar-link-color);
 }
