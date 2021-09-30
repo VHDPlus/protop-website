@@ -93,14 +93,14 @@ function Home() {
                     </div>
 
                     <Link
-                        className={classnames("button button--primary hideMobile", styles.startButton)}
+                        className={classnames("button button--primary hideMobile button--lg", styles.startButton)}
                         to={"/docs/getstarted#install-vhdplus-ide"}
                         data-aos="zoom-y-out"
                         data-aos-delay="150">
                         Read More
                     </Link>
                     <Link
-                        className={classnames("button button--secondary", styles.startButtonSecondary, styles.startButton)}
+                        className={classnames("button button--secondary button--lg", styles.startButtonSecondary, styles.startButton)}
                         to={"/docs/getstarted"}
                         data-aos="zoom-y-out"
                         data-aos-delay="200">
@@ -110,15 +110,15 @@ function Home() {
             </header>
 
             <main>
-                <Container data-aos="fade-up" className="padding--lg">
-                    <Row className={classnames("justify-content-md-center",styles.features)}>
-                        <Col md="auto">
+                <Container data-aos="fade-up" className={classnames("padding--lg", styles.features)}>
+                    <Row className={classnames("justify-content-md-center")}>
+                        <Col>
                             <img src="/static/img/company.png" />
                         </Col>
-                        <Col md="auto">
+                        <Col>
                             <img src="/static/img/customer_pur.png" />
                         </Col>
-                        <Col md="auto">
+                        <Col>
                             <img src="/static/img/university_or.png" />
                         </Col>
                     </Row>

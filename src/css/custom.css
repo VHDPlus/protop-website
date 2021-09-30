@@ -16,8 +16,16 @@
     --ifm-color-primary-lightest: #3e97ff;
     --ifm-code-font-size: 95%;
     --ifm-hero-background-color: transparent;
+
+    --ifm-heading-color: rgb(39, 39, 39);
     /*--ifm-code-background: 95%;*/
 }
+
+html[data-theme='dark'] * {
+    --ifm-footer-link-color: rgb(219, 219, 219);
+    --ifm-button-color: white;
+    --ifm-heading-color: rgb(216, 216, 216);
+  }
 
 body{
     background-color: transparent;
@@ -35,4 +43,12 @@ a:hover {
 nav, .navbar{
     color: var(--ifm-navbar-link-color);
     position: sticky;
+}
+
+@media (max-width: 996px){
+.row .col.col.col {
+    --ifm-col-width: 100%;
+    flex-basis: 0;
+    margin-left: 0;
+}
 }

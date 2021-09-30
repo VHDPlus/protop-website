@@ -7,28 +7,40 @@
 }
 
 .promoTitle{
-  font-size: 50pt;
+  font-size: 6rem;
   margin: 0;
 }
 
 .promoTitleTwo{
-  font-size: 70pt;
+  font-size: 10rem;
   margin: 0;
-  margin-top: -20px;
+  margin-top: -1vw;
 }
 
 .promoSubtitle{
   margin-top: 10px;
-  margin-bottom: 100px;
-  font-size: 20pt;
+  margin-bottom: 2vw;
+  font-size: 3vh;
 }
 
 .startButton{
   margin: 5px;
-  font-size: 20pt;
+}
+
+.features{
+  max-width: 42rem;
 }
 
 .features img{
   margin: auto;
-  max-width: 150px;
+}
+
+@media (max-width: 996px){
+  .promoTitle{
+    font-size: 2rem;
+  }
+
+  .promoTitleTwo{
+    font-size: 4rem;
+  }
 }
