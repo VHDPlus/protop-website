@@ -181,7 +181,6 @@ function Home() {
                             </Col>
                         </Row>
                     </Container>
-
                 </section>
 
                 <section className={styles.part}>
@@ -237,10 +236,34 @@ function Home() {
                 <section className={styles.part}>
                     <Container data-aos="fade-up" data-aos-delay="100" className={styles.features}>
                         <Row className="display-flex padding-vert--md">
-                            <h2 className="text-center">Convince Yourself</h2>
+                            <h2 className="text-center"><b>Have a Look at Our Work</b></h2>
+                            <span className={styles.textPart}>
+                            Here you can see our Audio Extension and our IDE in action. Also we do all kinds of learning material like this video.
+                            </span>
                         </Row>
                         <Row className={classnames("justify-content-md-center stretchRow")}>
-                            <div className="fluidMedia"><iframe id="ytplayer" width="100%" src="https://www.youtube.com/embed/Lzl480XEgFU?autoplay=0&origin=http://vhdplus.com" frameborder="0" allowFullScreen></iframe></div>
+                            <div className="fluidMedia"><iframe id="ytplayer" width="100%" src="https://www.youtube.com/embed/Lzl480XEgFU?autoplay=0&origin=http://vhdplus.com" allowFullScreen></iframe></div>
+                        </Row>
+                    </Container>
+                </section>
+
+                <section className={styles.part}>
+                    <Container data-aos="fade-up" data-aos-delay="100" className={styles.features}>
+                        <Row className="display-flex padding-vert--md">
+                            <Col>
+                                <h2 className="text-center"><br>Some of Our Tools</br></h2>
+                            </Col>
+                        </Row>
+                        <Row className={classnames("justify-content-md-center stretchRow")}>
+                            <Col>
+                                <img src="img/Services2_Elek.png" />
+                            </Col>
+                            <Col>
+                                <img src="img/Services2_Prog.png" />
+                            </Col>
+                            <Col>
+                                <img src="img/Services2_Lear.png" />
+                            </Col>
                         </Row>
                     </Container>
                 </section>
