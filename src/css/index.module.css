@@ -54,7 +54,7 @@
   background-color: var(--ifm-color-emphasis-500);
 }
 
-@media (max-width: 996px){
+@media (max-width: 768px){
   .promoTitle{
     font-size: 2rem;
   }
