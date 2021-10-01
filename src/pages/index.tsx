@@ -105,8 +105,10 @@ function Home() {
                         data-aos="zoom-y-out"
                         data-aos-delay="200">
                         Contact Us
-                    </Link>
+                    </Link>   
                 </Container>
+
+                <div className={styles.startArrow}></div>
             </header>
 
             <main>
@@ -114,7 +116,7 @@ function Home() {
                     <Container data-aos="fade-up" data-aos-delay="100" className={classnames(styles.features)}>
                         <Row className={classnames("justify-content-md-center")}>
                             <Col>
-                                <img src="/static/img/company.png"/>
+                                <img src="/static/img/company.png" />
                             </Col>
                             <Col>
                                 <img src="/static/img/university_or.png" />
@@ -123,14 +125,15 @@ function Home() {
                                 <img src="/static/img/customer_pur.png" />
                             </Col>
                         </Row>
-                    </Container>
-                    <Container data-aos="fade-up" data-aos-delay="100" className={classnames(styles.features)}>
+
                         <Row className="display-flex padding-vert--md">
                             <Col>
                                 <h2 className="text-center"><b>Trusted by Companies, Universities and Other Creative Minds</b></h2>
-                                <p className="text-center"><b>Since 2019</b> we are working on <b>easy to use software and hardware</b> solutions.
-                                In this time we already worked with big companies and universities. 
-                                But also a lot of different creative minds <b>all over the world</b> are using our solutions.</p>
+                                <span className={classnames(styles.textPart, "text-center")}>
+                                <b>Since 2019</b> we are working on <b>easy to use software and hardware</b> solutions.
+                                    In this time we already worked with big companies and universities.
+                                    But also a lot of different creative minds <b>all over the world</b> are using our solutions.
+                                </span>
                             </Col>
                         </Row>
                     </Container>
@@ -139,16 +142,18 @@ function Home() {
 
                 <section className={styles.part}>
                     <Container>
-                        <Row>
-                            <Col data-aos="fade-right" data-aos-delay="100" className="padding--lg">
+                        <Row className="align-items-center">
+                            <Col data-aos="fade-right" data-aos-delay="100" data-aos-anchor="#devAnchor">
                                 <h2><b>Software Development</b></h2>
-                                Your partner for all kinds of software development. <br/>
-                                We are specialized on <b>user friendly cross platform software and web design</b>. <br/>
-                                But we can adapt to all customers’ needs and also offer for example <b>app development or firmware development</b> for electronics devices.<br/>
-                                Let us convince you of the quality of our work and visit <b><a href="https://www.vhdplus.com/">vhdplus.com</a></b>.
+                                <span className={styles.textPart}>
+                                    Your partner for all kinds of software development. <br/>
+                                    We are specialized on <b>user friendly cross platform software and web design</b>. <br /><br />
+                                    But we can adapt to all customers’ needs and also offer for example <b>app development or firmware development</b> for electronics devices.<br />
+                                    Let us convince you of the quality of our work and visit <b><a href="https://www.vhdplus.com/">vhdplus.com</a></b>.
+                                </span>
                             </Col>
-                            <Col data-aos="fade-left" data-aos-delay="100" >
-                                <img src="/static/img/Development.png"/>
+                            <Col data-aos="fade-left" data-aos-delay="100" id="devAnchor" >
+                                <img src="/static/img/Development.png" />
                             </Col>
                         </Row>
                     </Container>
@@ -158,7 +163,7 @@ function Home() {
                     <Container data-aos="fade-up" data-aos-delay="100" className={classnames(styles.features)}>
                         <Row className={classnames("justify-content-md-center")}>
                             <Col>
-                                <img src="/static/img/Services2_Elek.png"/>
+                                <img src="/static/img/Services2_Elek.png" />
                             </Col>
                             <Col>
                                 <img src="/static/img/Services2_Prog.png" />
@@ -167,12 +172,12 @@ function Home() {
                                 <img src="/static/img/Services2_Lear.png" />
                             </Col>
                         </Row>
-                    </Container>
-                    <Container data-aos="fade-up" data-aos-delay="100" className={classnames(styles.features)}>
                         <Row className="display-flex padding-vert--md">
                             <Col>
                                 <h2 className="text-center">All-round service from <b>software</b> to <b>electronics</b> development and <b>learning</b> solutions</h2>
+                                <span className={classnames("text-center", styles.textPart)}>
                                 Be a part of our existing plug and play electronics development solutions. We help you to make development with your products as easy as possible.
+                                </span>
                             </Col>
                         </Row>
                     </Container>
@@ -181,14 +186,16 @@ function Home() {
 
                 <section className={styles.part}>
                     <Container>
-                        <Row>
-                            <Col data-aos="fade-right" data-aos-delay="100" className="padding--lg">
+                        <Row className="align-items-center">
+                            <Col data-aos="fade-right" data-aos-delay="100" className="padding--lg" data-aos-anchor="#pcbAnchor">
                                 <h2><b>Electronics Development</b></h2>
-                                Profit from our experience with plug and play evaluation boards.<br/>
+                                <span className={styles.textPart}>
+                                Profit from our experience with plug and play evaluation boards.<br />
                                 We can cover electronics development, production and can sell the products in our shop.
+                                </span>
                             </Col>
-                            <Col data-aos="fade-left" data-aos-delay="100" >
-                                <img src="/static/img/audio_pcb.png"/>
+                            <Col data-aos="fade-left" data-aos-delay="100" id="pcbAnchor" >
+                                <img src="/static/img/audio_pcb.png" />
                             </Col>
                         </Row>
                     </Container>
@@ -196,14 +203,16 @@ function Home() {
 
                 <section className={styles.part}>
                     <Container>
-                        <Row>
-                            <Col data-aos="fade-right" data-aos-delay="100" >
-                                <img src="/static/img/Program.png"/>
+                        <Row className="align-items-center">
+                            <Col data-aos="fade-right" data-aos-delay="100" id="programAnchor">
+                                <img src="/static/img/Program.png" />
                             </Col>
-                            <Col data-aos="fade-left" data-aos-delay="100" className="padding--lg">
+                            <Col data-aos="fade-left" data-aos-delay="100" className="padding--lg" data-aos-anchor="#programAnchor">
                                 <h2><b>Software Services</b></h2>
+                                <span className={styles.textPart}>
                                 Profit from our existing ecosystem and our easy to use IDE. Customers can build a working system with your product in a few clicks and can use our numerous debugging options.
-                                With our system based on FPGAs we find solutions for all kinds of electronics hardware from motors to cameras.  
+                                With our system based on FPGAs we find solutions for all kinds of electronics hardware from motors to cameras.
+                                </span>
                             </Col>
                         </Row>
                     </Container>
@@ -211,13 +220,15 @@ function Home() {
 
                 <section className={styles.part}>
                     <Container>
-                        <Row>
-                            <Col data-aos="fade-right" data-aos-delay="100" className="padding--lg">
+                        <Row className="align-items-center">
+                            <Col data-aos="fade-right" data-aos-delay="100" className="padding--lg" data-aos-anchor="#solutionsAnchor">
                                 <h2><b>Learning Solutions</b></h2>
+                                <span className={styles.textPart}>
                                 But we don’t stop there and also create documentation and tutorial videos for you, so the customer has the best possible experience while getting started with your device.
+                                </span>
                             </Col>
-                            <Col data-aos="fade-left" data-aos-delay="100" >
-                                <img src="/static/img/youtube.png"/>
+                            <Col data-aos="fade-left" data-aos-delay="100" id="solutionsAnchor">
+                                <img src="/static/img/youtube.png" />
                             </Col>
                         </Row>
                     </Container>

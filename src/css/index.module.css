@@ -33,12 +33,29 @@
   overflow: hidden;
 }
 
+.textPart{
+  font-size: 1.25rem;
+  color: rgba(127,127,127,1);
+  margin: auto;
+  display: block;
+}
+
 .features{
   max-width: 42rem;
 }
 
 .features img{
   margin: auto;
+}
+
+.startArrow{
+  display: block;
+  position: absolute;
+  bottom: 100px;
+  right: 50%;
+  width: 2px;
+  height: 60px;
+  background-color: var(--ifm-color-emphasis-500);
 }
 
 @media (max-width: 996px){
