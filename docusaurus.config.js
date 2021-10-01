@@ -23,13 +23,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           // Please change this to your repo.
-          editUrl: 'https://https://github.com/HendrikMennen/protop-website/edit/master',
+          editUrl: 'https://github.com/HendrikMennen/protop-website/edit/master',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+            'https://github.com/HendrikMennen/protop-website/edit/master/website/blog/',
         },
         theme: {
           customCss: [require.resolve('bootstrap/dist/css/bootstrap.min.css'), require.resolve('./src/css/custom.css')],
