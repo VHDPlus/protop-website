@@ -233,6 +233,17 @@ function Home() {
                         </Row>
                     </Container>
                 </section>
+
+                <section className={styles.part}>
+                    <Container data-aos="fade-up" data-aos-delay="100" className={styles.features}>
+                        <Row className="display-flex padding-vert--md">
+                            <h2 className="text-center">Convince Yourself</h2>
+                        </Row>
+                        <Row className={classnames("justify-content-md-center stretchRow")}>
+                            <div className="fluidMedia"><iframe id="ytplayer" width="100%" src="https://www.youtube.com/embed/Lzl480XEgFU?autoplay=0&origin=http://vhdplus.com" frameborder="0" allowFullScreen></iframe></div>
+                        </Row>
+                    </Container>
+                </section>
             </main>
 
         </Layout>
