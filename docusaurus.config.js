@@ -19,9 +19,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.json"),
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          editUrl: 'https://https://github.com/HendrikMennen/protop-website/edit/master',
         },
         blog: {
           showReadingTime: true,
@@ -51,13 +53,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Overview',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            type: 'doc',
+            docId: 'contact',
             position: 'right',
+            label: 'Contact',
           },
         ],
       },
@@ -74,35 +77,57 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: "Stack Overflow",
+                href: "https://stackoverflow.com/questions/tagged/vhdp"
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: "Project chat",
+                href:
+                  "https://discord.gg/NCN9VAh"
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: "GitHub",
+                href: "https://github.com/search?utf8=%E2%9C%93&q=vhdplus"
               },
-            ],
+              {
+                label: "Youtube",
+                href: "https://www.youtube.com/channel/UC7qiOvlaBSiWyAb7R1xTaEw"
+              }
+            ]
           },
           {
-            title: 'More',
+            title: "Social",
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: "Blog",
+                to: "blog"
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: "Twitter",
+                href: "https://twitter.com/vhdplus"
               },
-            ],
+              {
+                label: "Instagram",
+                href: "https://www.instagram.com/vhdplus/"
+              }
+            ]
           },
+          {
+            title: "Legal",
+            items: [
+              {
+                label: "Contact",
+                to: "docs/contact"
+              },
+              {
+                label: "Privacy Policy",
+                to: "docs/privacy"
+              }
+            ]
+          }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },

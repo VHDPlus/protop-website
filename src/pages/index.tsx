@@ -94,14 +94,14 @@ function Home() {
 
                     <Link
                         className={classnames("button button--primary hideMobile button--lg", styles.startButton)}
-                        to={"/docs/getstarted#install-vhdplus-ide"}
+                        to={"/docs/intro"}
                         data-aos="zoom-y-out"
                         data-aos-delay="150">
                         Read More
                     </Link>
                     <Link
                         className={classnames("button button--secondary button--lg", styles.startButtonSecondary, styles.startButton)}
-                        to={"/docs/getstarted"}
+                        to={"/docs/contact"}
                         data-aos="zoom-y-out"
                         data-aos-delay="200">
                         Contact Us
@@ -113,16 +113,16 @@ function Home() {
 
             <main>
                 <section className={styles.part}>
-                    <Container data-aos="fade-up" data-aos-delay="100" className={classnames(styles.features)}>
+                    <Container data-aos="fade-up" data-aos-delay="100" className={styles.features}>
                         <Row className={classnames("justify-content-md-center stretchRow")}>
                             <Col>
-                                <img src="/static/img/company.png" />
+                                <img src="img/company.png" />
                             </Col>
                             <Col>
-                                <img src="/static/img/university_or.png" />
+                                <img src="img/university_or.png" />
                             </Col>
                             <Col>
-                                <img src="/static/img/customer_pur.png" />
+                                <img src="img/customer_pur.png" />
                             </Col>
                         </Row>
 
@@ -153,23 +153,23 @@ function Home() {
                                 </span>
                             </Col>
                             <Col data-aos="fade-left" data-aos-delay="100" className="mobile0">
-                                <img src="/static/img/Development.png"/>
+                                <img src="img/Development.png"/>
                             </Col>
                         </Row>
                     </Container>
                 </section>
 
                 <section className={styles.part}>
-                    <Container data-aos="fade-up" data-aos-delay="100" className={classnames(styles.features)}>
+                    <Container data-aos="fade-up" data-aos-delay="100" className={styles.features}>
                         <Row className={classnames("justify-content-md-center stretchRow")}>
                             <Col>
-                                <img src="/static/img/Services2_Elek.png" />
+                                <img src="img/Services2_Elek.png" />
                             </Col>
                             <Col>
-                                <img src="/static/img/Services2_Prog.png" />
+                                <img src="img/Services2_Prog.png" />
                             </Col>
                             <Col>
-                                <img src="/static/img/Services2_Lear.png" />
+                                <img src="img/Services2_Lear.png" />
                             </Col>
                         </Row>
                         <Row className="display-flex padding-vert--md">
@@ -195,7 +195,7 @@ function Home() {
                                 </span>
                             </Col>
                             <Col data-aos="fade-left" data-aos-delay="100" className="mobile0">
-                                <img src="/static/img/audio_pcb.png"/>
+                                <img src="img/audio_pcb.png"/>
                             </Col>
                         </Row>
                     </Container>
@@ -205,7 +205,7 @@ function Home() {
                     <Container>
                         <Row className="align-items-center" id="programAnchor">
                             <Col data-aos="fade-right" data-aos-delay="100">
-                                <img src="/static/img/Program.png" />
+                                <img src="img/Program.png" />
                             </Col>
                             <Col data-aos="fade-left" data-aos-delay="100" className="padding--lg" data-aos-anchor="#programAnchor">
                                 <h2><b>Software Services</b></h2>
@@ -228,7 +228,7 @@ function Home() {
                                 </span>
                             </Col>
                             <Col data-aos="fade-left" data-aos-delay="100" className="mobile0">
-                                <img src="/static/img/youtube.png" />
+                                <img src="img/youtube.png" />
                             </Col>
                         </Row>
                     </Container>

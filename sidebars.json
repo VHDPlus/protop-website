@@ -1,0 +1,9 @@
+{
+  "docs": {
+    
+  },
+  "about": {
+    "About": ["contact"],
+    "Privacy Policy": ["privacy", "privacy_de"]
+  }
+}

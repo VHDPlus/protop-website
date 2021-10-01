@@ -41,11 +41,7 @@
 }
 
 .features{
-  max-width: 42rem;
-}
-
-.features img{
-  margin: auto;
+  max-width: 42rem !important;
 }
 
 .startArrow{
