@@ -142,7 +142,7 @@ function Home() {
 
                 <section className={styles.part}>
                     <Container>
-                        <Row className="align-items-center">
+                        <Row className="align-items-center" id="devAnchor">
                             <Col data-aos="fade-right" data-aos-delay="100" data-aos-anchor="#devAnchor">
                                 <h2><b>Software Development</b></h2>
                                 <span className={styles.textPart}>
@@ -152,8 +152,8 @@ function Home() {
                                     Let us convince you of the quality of our work and visit <b><a href="https://www.vhdplus.com/">vhdplus.com</a></b>.
                                 </span>
                             </Col>
-                            <Col data-aos="fade-left" data-aos-delay="100" id="devAnchor" >
-                                <img src="/static/img/Development.png" />
+                            <Col data-aos="fade-left" data-aos-delay="100">
+                                <img src="/static/img/Development.png"/>
                             </Col>
                         </Row>
                     </Container>
@@ -186,7 +186,7 @@ function Home() {
 
                 <section className={styles.part}>
                     <Container>
-                        <Row className="align-items-center">
+                        <Row className="align-items-center" id="pcbAnchor">
                             <Col data-aos="fade-right" data-aos-delay="100" className="padding--lg" data-aos-anchor="#pcbAnchor">
                                 <h2><b>Electronics Development</b></h2>
                                 <span className={styles.textPart}>
@@ -194,8 +194,8 @@ function Home() {
                                 We can cover electronics development, production and can sell the products in our shop.
                                 </span>
                             </Col>
-                            <Col data-aos="fade-left" data-aos-delay="100" id="pcbAnchor" >
-                                <img src="/static/img/audio_pcb.png" />
+                            <Col data-aos="fade-left" data-aos-delay="100">
+                                <img src="/static/img/audio_pcb.png"/>
                             </Col>
                         </Row>
                     </Container>
@@ -203,8 +203,8 @@ function Home() {
 
                 <section className={styles.part}>
                     <Container>
-                        <Row className="align-items-center">
-                            <Col data-aos="fade-right" data-aos-delay="100" id="programAnchor">
+                        <Row className="align-items-center" id="programAnchor">
+                            <Col data-aos="fade-right" data-aos-delay="100">
                                 <img src="/static/img/Program.png" />
                             </Col>
                             <Col data-aos="fade-left" data-aos-delay="100" className="padding--lg" data-aos-anchor="#programAnchor">
@@ -220,14 +220,14 @@ function Home() {
 
                 <section className={styles.part}>
                     <Container>
-                        <Row className="align-items-center">
-                            <Col data-aos="fade-right" data-aos-delay="100" className="padding--lg" data-aos-anchor="#solutionsAnchor">
+                        <Row className="align-items-center" id="anchorSolutions">
+                            <Col data-aos="fade-right" data-aos-delay="100" className="padding--lg" data-aos-anchor="#anchorSolutions">
                                 <h2><b>Learning Solutions</b></h2>
                                 <span className={styles.textPart}>
                                 But we don’t stop there and also create documentation and tutorial videos for you, so the customer has the best possible experience while getting started with your device.
                                 </span>
                             </Col>
-                            <Col data-aos="fade-left" data-aos-delay="100" id="solutionsAnchor">
+                            <Col data-aos="fade-left" data-aos-delay="100">
                                 <img src="/static/img/youtube.png" />
                             </Col>
                         </Row>
