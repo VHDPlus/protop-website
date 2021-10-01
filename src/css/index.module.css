@@ -3,7 +3,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .promoTitle{
@@ -47,7 +47,7 @@
 .startArrow{
   display: block;
   position: absolute;
-  bottom: 100px;
+  bottom: 40px;
   right: 50%;
   width: 2px;
   height: 60px;
