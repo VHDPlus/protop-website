@@ -28,5 +28,5 @@ steps:
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Build.ArtifactStagingDirectory)'
-    artifact: 'protopwebsite'
+    artifact: 'website'
   displayName: Publish Artifacts
