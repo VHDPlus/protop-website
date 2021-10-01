@@ -114,7 +114,7 @@ function Home() {
             <main>
                 <section className={styles.part}>
                     <Container data-aos="fade-up" data-aos-delay="100" className={classnames(styles.features)}>
-                        <Row className={classnames("justify-content-md-center")}>
+                        <Row className={classnames("justify-content-md-center stretchRow")}>
                             <Col>
                                 <img src="/static/img/company.png" />
                             </Col>
@@ -152,7 +152,7 @@ function Home() {
                                     Let us convince you of the quality of our work and visit <b><a href="https://www.vhdplus.com/">vhdplus.com</a></b>.
                                 </span>
                             </Col>
-                            <Col data-aos="fade-left" data-aos-delay="100">
+                            <Col data-aos="fade-left" data-aos-delay="100" className="mobile0">
                                 <img src="/static/img/Development.png"/>
                             </Col>
                         </Row>
@@ -161,7 +161,7 @@ function Home() {
 
                 <section className={styles.part}>
                     <Container data-aos="fade-up" data-aos-delay="100" className={classnames(styles.features)}>
-                        <Row className={classnames("justify-content-md-center")}>
+                        <Row className={classnames("justify-content-md-center stretchRow")}>
                             <Col>
                                 <img src="/static/img/Services2_Elek.png" />
                             </Col>
@@ -194,7 +194,7 @@ function Home() {
                                 We can cover electronics development, production and can sell the products in our shop.
                                 </span>
                             </Col>
-                            <Col data-aos="fade-left" data-aos-delay="100">
+                            <Col data-aos="fade-left" data-aos-delay="100" className="mobile0">
                                 <img src="/static/img/audio_pcb.png"/>
                             </Col>
                         </Row>
@@ -227,7 +227,7 @@ function Home() {
                                 But we don’t stop there and also create documentation and tutorial videos for you, so the customer has the best possible experience while getting started with your device.
                                 </span>
                             </Col>
-                            <Col data-aos="fade-left" data-aos-delay="100">
+                            <Col data-aos="fade-left" data-aos-delay="100" className="mobile0">
                                 <img src="/static/img/youtube.png" />
                             </Col>
                         </Row>

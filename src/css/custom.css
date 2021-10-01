@@ -45,10 +45,14 @@ nav, .navbar{
     position: sticky;
 }
 
-@media (max-width: 996px){
-.row .col.col.col {
-    --ifm-col-width: 100%;
-    flex-basis: 0;
-    margin-left: 0;
+.mobile0{
+    order: -1;
 }
+
+@media (max-width: 996px){
+    .stretchRow .col.col.col {
+        --ifm-col-width: 100%;
+        flex-basis: 0;
+        margin-left: 0;
+    }
 }
