@@ -268,7 +268,7 @@ function Home() {
                             <Col className={styles.card} data-aos="fade-up" data-aos-delay="100">
                                 <img src="img/AutoDesk.png" className={styles.cardImage} />
                                 <span className={styles.cardTitle}>Fusion 360</span>
-                                <span className={styles.cardSubtitle}>Our tool of choice to design our hardware</span>
+                                <span className={styles.cardSubtitle}>Autodesk Fusion 360 is our tool of choice to design hardware</span>
                             </Col>
                             <Col className={styles.card} data-aos="fade-up" data-aos-delay="100">
                                 <img src="img/Quartus-Prime.png" className={styles.cardImage} />
@@ -276,7 +276,7 @@ function Home() {
                                 <span className={styles.cardSubtitle}>Necessary for VHDPlus IDE to synthesize FPGA Designs</span>
                             </Col>
                             <Col className={styles.card} data-aos="fade-up" data-aos-delay="100">
-                                <img src="img/Wordpress.svg" className={styles.cardImage} />
+                                <img src="img/WordPress.svg" className={styles.cardImage} />
                                 <span className={styles.cardTitle}>Wordpress</span>
                                 <span className={styles.cardSubtitle}>A powerful framework to create Blogs and Online-Shops</span>
                             </Col>
