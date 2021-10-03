@@ -60,16 +60,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
+        links: [    
           {
             title: "Community",
             items: [
@@ -78,7 +69,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 href: "https://stackoverflow.com/questions/tagged/vhdp"
               },
               {
-                label: "Project chat",
+                label: "Discord",
                 href:
                   "https://discord.gg/NCN9VAh"
               },

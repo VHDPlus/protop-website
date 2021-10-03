@@ -93,13 +93,6 @@ function Home() {
                     </div>
 
                     <Link
-                        className={classnames("button button--primary hideMobile button--lg", styles.startButton)}
-                        to={"/docs/intro"}
-                        data-aos="zoom-y-out"
-                        data-aos-delay="150">
-                        Read More
-                    </Link>
-                    <Link
                         className={classnames("button button--secondary button--lg", styles.startButtonSecondary, styles.startButton)}
                         to={"/docs/contact"}
                         data-aos="zoom-y-out"
