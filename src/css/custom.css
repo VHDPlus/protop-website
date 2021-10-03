@@ -16,9 +16,14 @@
     --ifm-color-primary-lightest: #3e97ff;
     --ifm-code-font-size: 95%;
     --ifm-hero-background-color: transparent;
+    --ifm-footer-background-color: #242526;
 
     --ifm-heading-color: var(--ifm-color-content);
     /*--ifm-code-background: 95%;*/
+}
+
+html[data-theme='dark'] .footer{
+    --ifm-footer-background-color: #242526;
 }
 
 html[data-theme='dark'] * {
