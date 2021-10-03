@@ -114,6 +114,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             ]
           }
         ],
+        logo: {
+          alt: "VHDPlus Logo",
+          src: "img/ProtopLogo.png",
+          href: "https://protop-solutions.com"
+        },
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
