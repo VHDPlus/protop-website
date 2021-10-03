@@ -251,7 +251,7 @@ function Home() {
                     <Container data-aos="fade-up" data-aos-delay="100" className={styles.features}>
                         <Row className="display-flex padding-vert--md">
                             <Col>
-                                <h2 className="text-center"><br>Some of Our Tools</br></h2>
+                                <h2 className="text-center"><b>Some of Our Tools</b></h2>
                             </Col>
                         </Row>
                         <Row className={classnames("justify-content-md-center stretchRow")}>
