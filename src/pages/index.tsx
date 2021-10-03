@@ -169,7 +169,7 @@ function Home() {
                             <Col>
                                 <h2 className="text-center">All-round service from <b>software</b> to <b>electronics</b> development and <b>learning</b> solutions</h2>
                                 <span className={classnames("text-center", styles.textPart)}>
-                                Be a part of our existing plug and play electronics development solutions. We help you to make development with your products as easy as possible.
+                                Be a part of our <b>existing electronics development solutions</b>. We help you to make development with <b>your products</b> as easy as possible.
                                 </span>
                             </Col>
                         </Row>
@@ -182,8 +182,8 @@ function Home() {
                             <Col data-aos="fade-right" data-aos-delay="100" className="padding--lg" data-aos-anchor="#pcbAnchor">
                                 <h2><b>Electronics Development</b></h2>
                                 <span className={styles.textPart}>
-                                Profit from our experience with plug and play evaluation boards.<br />
-                                We can cover electronics development, production and can sell the products in our shop.
+                                Profit from our experience with <b>plug and play evaluation boards</b>.<br />
+                                We can cover electronics <b>development, production</b> and can <b>sell</b> the products in our shop.
                                 </span>
                             </Col>
                             <Col data-aos="fade-left" data-aos-delay="100" className="mobile0">
@@ -197,13 +197,13 @@ function Home() {
                     <Container>
                         <Row className="align-items-center" id="programAnchor">
                             <Col data-aos="fade-right" data-aos-delay="100">
-                                <img src="img/Program.png" />
+                                <img src="img/Program2.png" />
                             </Col>
                             <Col data-aos="fade-left" data-aos-delay="100" className="padding--lg" data-aos-anchor="#programAnchor">
                                 <h2><b>Software Services</b></h2>
                                 <span className={styles.textPart}>
-                                Profit from our existing ecosystem and our easy to use IDE. Customers can build a working system with your product in a few clicks and can use our numerous debugging options.
-                                With our system based on FPGAs we find solutions for all kinds of electronics hardware from motors to cameras.
+                                Profit from our <b>existing ecosystem</b> and our easy to use IDE. Customers can build a <b>working system</b> with your product <b>in a few clicks</b> and can use our numerous debugging options.
+                                With our system based on FPGAs we find solutions for <b>all kinds of electronics</b> hardware from motors to cameras.
                                 </span>
                             </Col>
                         </Row>
@@ -216,11 +216,11 @@ function Home() {
                             <Col data-aos="fade-right" data-aos-delay="100" className="padding--lg" data-aos-anchor="#anchorSolutions">
                                 <h2><b>Learning Solutions</b></h2>
                                 <span className={styles.textPart}>
-                                But we don’t stop there and also create documentation and tutorial videos for you, so the customer has the best possible experience while getting started with your device.
+                                But we don’t stop there and also create <b>documentation and tutorial videos</b> for you, so the customer has the best possible experience while getting started with your device.
                                 </span>
                             </Col>
                             <Col data-aos="fade-left" data-aos-delay="100" className="mobile0">
-                                <img src="img/youtube.png" />
+                                <img src="img/youtube2.png" />
                             </Col>
                         </Row>
                     </Container>
