@@ -111,7 +111,7 @@ function Home() {
                 <div className={styles.startArrow}></div>
             </header>
 
-            <main>
+            <main className={styles.mainPart}>
                 <section className={styles.part}>
                     <Container data-aos="fade-up" data-aos-delay="100" className={styles.features}>
                         <Row className={classnames("justify-content-md-center stretchRow")}>
@@ -131,8 +131,8 @@ function Home() {
                                 <h2 className="text-center"><b>Trusted by Companies, Universities and Other Creative Minds</b></h2>
                                 <span className={classnames(styles.textPart, "text-center")}>
                                 <b>Since 2019</b> we are working on <b>easy to use software and hardware</b> solutions.
-                                    In this time we already worked with big companies and universities.
-                                    But also a lot of different creative minds <b>all over the world</b> are using our solutions.
+                                    We have already worked together with big companies and universities.
+                                    Also, a lot of different creative minds from <b>all over the world</b> are using our software and hardware solutions.
                                 </span>
                             </Col>
                         </Row>
@@ -237,32 +237,55 @@ function Home() {
                     <Container data-aos="fade-up" data-aos-delay="100" className={styles.features}>
                         <Row className="display-flex padding-vert--md">
                             <h2 className="text-center"><b>Have a Look at Our Work</b></h2>
-                            <span className={styles.textPart}>
+                            <span className={classnames(styles.textPart, "text-center")}>
                             Here you can see our Audio Extension and our IDE in action. Also we do all kinds of learning material like this video.
                             </span>
                         </Row>
-                        <Row className={classnames("justify-content-md-center stretchRow")}>
+                        <Row className={classnames("justify-content-md-center margin-top--md")}>
                             <div className="fluidMedia"><iframe id="ytplayer" width="100%" src="https://www.youtube.com/embed/Lzl480XEgFU?autoplay=0&origin=http://vhdplus.com" allowFullScreen></iframe></div>
                         </Row>
                     </Container>
                 </section>
 
                 <section className={styles.part}>
-                    <Container data-aos="fade-up" data-aos-delay="100" className={styles.features}>
+                    <Container className={styles.featuresTwo}>
                         <Row className="display-flex padding-vert--md">
-                            <Col>
-                                <h2 className="text-center"><b>Some of Our Tools</b></h2>
+                            <Col >
+                                <h2 className="text-center"><b>Some of our favorite Tools</b></h2>
                             </Col>
                         </Row>
-                        <Row className={classnames("justify-content-md-center stretchRow")}>
-                            <Col>
-                                <img src="img/Services2_Elek.png" />
+                        <Row className={classnames("justify-content-md-center")}>
+                            <Col className={styles.card} data-aos="fade-up" data-aos-delay="100">
+                                <img src="img/vhdp.svg" className={styles.cardImage} />
+                                <span className={styles.cardTitle}>VHDPlus IDE</span>
+                                <span className={styles.cardSubtitle}>Our own IDE used to make FPGA Programming easier</span>
                             </Col>
-                            <Col>
-                                <img src="img/Services2_Prog.png" />
+                            <Col className={styles.card} data-aos="fade-up" data-aos-delay="100">
+                                <img src="img/Avalonia.png" className={styles.cardImage} />
+                                <span className={styles.cardTitle}>Avalonia</span>
+                                <span className={styles.cardSubtitle}>Avalonia is an open source UI Framework we love to use</span>
                             </Col>
-                            <Col>
-                                <img src="img/Services2_Lear.png" />
+                            <Col className={styles.card} data-aos="fade-up" data-aos-delay="100">
+                                <img src="img/React.svg" className={styles.cardImage} />
+                                <span className={styles.cardTitle}>React JS</span>
+                                <span className={styles.cardSubtitle}>Our go to JavaScript library to create beautiful websites</span>
+                            </Col>
+                        </Row>
+                        <Row className={classnames("justify-content-md-center")}>
+                            <Col className={styles.card} data-aos="fade-up" data-aos-delay="100">
+                                <img src="img/AutoDesk.png" className={styles.cardImage} />
+                                <span className={styles.cardTitle}>Fusion 360</span>
+                                <span className={styles.cardSubtitle}>Our tool of choice to design our hardware</span>
+                            </Col>
+                            <Col className={styles.card} data-aos="fade-up" data-aos-delay="100">
+                                <img src="img/Quartus-Prime.png" className={styles.cardImage} />
+                                <span className={styles.cardTitle}>Quartus Prime</span>
+                                <span className={styles.cardSubtitle}>Necessary for VHDPlus IDE to synthesize FPGA Designs</span>
+                            </Col>
+                            <Col className={styles.card} data-aos="fade-up" data-aos-delay="100">
+                                <img src="img/Wordpress.svg" className={styles.cardImage} />
+                                <span className={styles.cardTitle}>Wordpress</span>
+                                <span className={styles.cardSubtitle}>A powerful framework to create Blogs and Online-Shops</span>
                             </Col>
                         </Row>
                     </Container>

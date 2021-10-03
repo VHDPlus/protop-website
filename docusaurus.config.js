@@ -49,12 +49,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           src: 'img/Protop-Logo.png',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Overview',
-          },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             type: 'doc',

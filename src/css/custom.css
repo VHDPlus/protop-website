@@ -67,7 +67,7 @@ video {
     .stretchRow .col.col.col {
         --ifm-col-width: 100%;
         flex-basis: 0;
-        margin-left: 0;
+        
     }
 
     .mobile0{
