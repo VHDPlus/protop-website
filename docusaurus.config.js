@@ -119,7 +119,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           src: "img/ProtopLogo.png",
           href: "https://protop-solutions.com"
         },
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Protop Solutions UG`,
       },
       prism: {
         theme: lightCodeTheme,
