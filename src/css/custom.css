@@ -50,6 +50,10 @@ nav, .navbar{
     position: sticky;
 }
 
+.stretchbtn{
+    width: 100%;
+}
+
 video {
     max-width: 100%;
   }
