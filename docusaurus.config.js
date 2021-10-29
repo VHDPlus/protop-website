@@ -49,7 +49,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           src: 'img/Protop-Logo.png',
         },
         items: [
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             type: 'doc',
             docId: 'contact',
@@ -86,10 +85,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           {
             title: "Social",
             items: [
-              {
-                label: "Blog",
-                to: "blog"
-              },
               {
                 label: "Twitter",
                 href: "https://twitter.com/vhdplus"
