@@ -304,10 +304,10 @@ class App extends React.Component {
     }
 
     handleSubmit(event){
-        e.preventDefault();
+        event.preventDefault();
         axios({
           method: "POST",
-          url:"http://localhost:3002/send",
+          url:"https://contact.protop-solutions.com/send",
           data:  this.state
         }).then((response)=>{
           if (response.data.status === 'success') {
