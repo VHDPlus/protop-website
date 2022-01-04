@@ -23,6 +23,10 @@
   font-size: 3vh;
 }
 
+html[data-theme='light'] .promoSubtitle{
+  color: black;
+}
+
 .startButton{
   margin: 5px;
 }
