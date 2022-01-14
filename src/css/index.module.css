@@ -77,7 +77,7 @@ html[data-theme='dark'] .particlesBackground{
 
 .startArrow{
   display: block;
-  position: absolute;
+  position: fixed;
   bottom: 30px;
   width: 40px;
   height: 40px;
@@ -89,6 +89,11 @@ html[data-theme='dark'] .particlesBackground{
   animation-iteration-count: infinite;
   background: transparent url("/img/down.png") center;
   background-size: contain;
+  opacity: 0%;
+  transition: 1s;
+}
+
+[data-scroll='0'] .startArrow{
   opacity: 80%;
 }
 
