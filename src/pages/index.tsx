@@ -9,6 +9,7 @@ import Link from "@docusaurus/Link";
 import styles from "../css/index.module.css";
 import axios from 'axios';
 
+import Particles from "react-tsparticles";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -24,6 +25,22 @@ const fallback = <canvas style={{
     zIndex: -10
 }} />;
 
+const debounce = (fn) => {
+    let frame: number;
+    return (...params) => {
+        if (frame) {
+            cancelAnimationFrame(frame);
+        }
+        frame = requestAnimationFrame(() => {
+            fn(...params);
+        });
+    }
+};
+
+const storeScroll = () => {
+    document.documentElement.dataset.scroll = window.scrollY.toString();
+}
+
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -35,7 +52,31 @@ class App extends React.Component {
     }
 
     componentDidMount() {
+
+        document.addEventListener('scroll', debounce(storeScroll), { passive: true });
+
+        // Update scroll position for first time
+        storeScroll();
+        document.documentElement.dataset.isindex = "1";
         AOS.init();
+    }
+
+    componentWillUnmount() {
+        document.documentElement.dataset.isindex = "0";
+    }
+
+
+    setNav(): void {
+        var x = document.getElementsByClassName("navbar");
+        var navbar = x[0] as HTMLElement;
+
+        if (navbar && (window.location.pathname == "/" || window.location.pathname == "")) {
+            if (window.scrollY <= 50) {
+                if (!navbar.classList.contains("navTransparent")) navbar.classList.add("navTransparent");
+            } else {
+                navbar.classList.remove("navTransparent");
+            }
+        }
     }
 
     render() {
@@ -43,15 +84,88 @@ class App extends React.Component {
             <Layout
                 title={"Protop Solutions"}
                 description="Professional Technology for Ordinary People">
-
-                <BrowserOnly
-                    fallback={fallback}>
-                    {() => (
-                        <Suspense fallback={fallback}>
-                            <LazyThreeJSAnimationShader />
-                        </Suspense>
-                    )}
-                </BrowserOnly>
+                
+                <div className={styles.particlesBackground}>
+                             <Particles
+                                    className={classnames("hideMobile", styles.particles)}
+                                    id="tsparticles"
+                                    options={{
+                                        fullScreen: {
+                                            enable: false,
+                                        },
+                                        fpsLimit: 60,     
+                                        interactivity: {
+                                            events: {
+                                                onClick: {
+                                                    enable: false,
+                                                    mode: "push",
+                                                },
+                                                onHover: {
+                                                    enable: true,
+                                                    mode: "bubble",
+                                                },
+                                                resize: true,
+                                            },
+                                            modes: {
+                                                bubble: {
+                                                    distance: 100,
+                                                    duration: 2,
+                                                    opacity: 0.8,
+                                                    size: 10,
+                                                },
+                                                push: {
+                                                    quantity: 4,
+                                                },
+                                                repulse: {
+                                                    distance: 200,
+                                                    duration: 0.4,
+                                                },
+                                            },
+                                        },
+                                        particles: {
+                                            color: {
+                                                value: "#ffffff",
+                                            },
+                                            links: {
+                                                color: "#ffffff",
+                                                distance: 150,
+                                                enable: false,
+                                                opacity: 0.5,
+                                                width: 1,
+                                            },
+                                            collisions: {
+                                                enable: false,
+                                            },
+                                            move: {
+                                                direction: "none",
+                                                enable: true,
+                                                outMode: "bounce",
+                                                random: false,
+                                                speed: 2,
+                                                straight: false,
+                                            },
+                                            number: {
+                                                density: {
+                                                    enable: true,
+                                                    area: 800,
+                                                },
+                                                value: 20,
+                                            },
+                                            opacity: {
+                                                value: 0.5,
+                                            },
+                                            shape: {
+                                                type: "circle",
+                                            },
+                                            size: {
+                                                random: true,
+                                                value: 5,
+                                            },
+                                        },
+                                        detectRetina: true,
+                                    }}
+                                />
+                        </div>
 
                 <header className={classnames("hero", styles.heroBanner)}>
                     <Container>
@@ -303,24 +417,24 @@ class App extends React.Component {
         this.setState({ message: event.target.value })
     }
 
-    handleSubmit(event){
+    handleSubmit(event) {
         event.preventDefault();
         axios({
-          method: "POST",
-          url:"https://contact.protop-solutions.com/send",
-          data:  this.state
-        }).then((response)=>{
-          if (response.data.status === 'success') {
-            alert("Message Sent.");
-            this.resetForm()
-          } else if (response.data.status === 'fail') {
-            alert("Message failed to send.")
-          }
+            method: "POST",
+            url: "https://contact.protop-solutions.com/send",
+            data: this.state
+        }).then((response) => {
+            if (response.data.status === 'success') {
+                alert("Message Sent.");
+                this.resetForm()
+            } else if (response.data.status === 'fail') {
+                alert("Message failed to send.")
+            }
         })
-      }
+    }
 
-    resetForm(){
-        this.setState({name: '', email: '', message: ''})
+    resetForm() {
+        this.setState({ name: '', email: '', message: '' })
     }
 }
 

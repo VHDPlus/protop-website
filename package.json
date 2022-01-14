@@ -29,6 +29,7 @@
     "react-dom": "^16.8.4",
     "react-syntax-highlighter": "^15.4.4",
     "react-transition-group": "^4.4.1",
+    "react-tsparticles": "^1.39.0",
     "three": "^0.131.3",
     "ts-easing": "^0.2.0"
   },
