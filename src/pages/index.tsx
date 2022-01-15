@@ -13,8 +13,6 @@ import Particles from "react-tsparticles";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const LazyThreeJSAnimationShader = React.lazy(() => import("../shape/ThreeJSAnimationShader"));
-
 const fallback = <canvas style={{
     height: "800px",
     width: "100vh",
@@ -91,7 +89,7 @@ class App extends React.Component {
                 
                 <div className={styles.particlesBackground}>
                              <Particles
-                                    className={classnames("hideMobile", styles.particles)}
+                                    className={classnames(styles.particles)}
                                     id="tsparticles"
                                     options={{
                                         fullScreen: {
@@ -132,9 +130,9 @@ class App extends React.Component {
                                             },
                                             links: {
                                                 color: "#ffffff",
-                                                distance: 150,
+                                                distance: 50,
                                                 enable: false,
-                                                opacity: 0.5,
+                                                opacity: 0.1,
                                                 width: 1,
                                             },
                                             collisions: {
@@ -145,7 +143,7 @@ class App extends React.Component {
                                                 enable: true,
                                                 outMode: "bounce",
                                                 random: false,
-                                                speed: 2,
+                                                speed: 1,
                                                 straight: false,
                                             },
                                             number: {
@@ -153,7 +151,7 @@ class App extends React.Component {
                                                     enable: true,
                                                     area: 800,
                                                 },
-                                                value: 20,
+                                                value: 15,
                                             },
                                             opacity: {
                                                 value: 0.5,
