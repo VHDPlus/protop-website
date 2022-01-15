@@ -42,14 +42,18 @@ const storeScroll = () => {
 }
 
 class App extends React.Component {
+    private contactRef: React.RefObject<HTMLInputElement>;
     constructor(props) {
         super(props);
         this.state = {
             name: '',
             email: '',
             message: ''
-        }
+        };
+        this.contactRef = React.createRef()  
     }
+
+    executeScroll = () => this.contactRef.current.scrollIntoView({behavior: "auto", block: "center", inline: "nearest"});
 
     componentDidMount() {
 
@@ -183,8 +187,7 @@ class App extends React.Component {
 
                         <Link
                             className={classnames("button button--secondary button--lg", styles.startButtonSecondary, styles.startButton)}
-                            to={"/docs/contact"}
-                            data-aos="zoom-y-out"
+                            data-aos="zoom-y-out" onClick={this.executeScroll}
                             data-aos-delay="200">
                             Contact Us
                         </Link>
@@ -373,7 +376,7 @@ class App extends React.Component {
                         </Container>
                     </section>
 
-                    <section className={styles.part}>
+                    <section className={styles.part} ref={this.contactRef}>
                         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
                             <Container data-aos="fade-up" data-aos-delay="100" className={styles.features}>
                                 <Row className="display-flex padding-vert--md">
