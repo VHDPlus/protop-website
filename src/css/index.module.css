@@ -53,6 +53,7 @@ html[data-theme='dark'] .particlesBackground{
 .mainPart{
   margin-bottom: 10rem;
   margin-top: 10vh;
+  overflow-x: hidden;
 }
 
 .part{
