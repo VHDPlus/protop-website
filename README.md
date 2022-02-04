@@ -1,6 +1,6 @@
 Changes to this repository will be built and uploaded to protop-solutions.com every day at 0:00 UTC
 
-[![Build Status](https://dev.azure.com/LeonBeier/VHDP/_apis/build/status/HendrikMennen.protop-website?branchName=master)](https://dev.azure.com/LeonBeier/VHDP/_build/latest?definitionId=5&branchName=master)
+[![Node.js CI](https://github.com/VHDPlus/protop-website/actions/workflows/node.js.yml/badge.svg)](https://github.com/VHDPlus/protop-website/actions/workflows/node.js.yml)
 
 ## Requirements
 
