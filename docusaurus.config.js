@@ -11,7 +11,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'hendrikmennen', // Usually your GitHub org/user name.
+  organizationName: 'VHDPlus', // Usually your GitHub org/user name.
   projectName: 'protop-website', // Usually your repo name.
   presets: [
     [
@@ -23,13 +23,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/HendrikMennen/protop-website/edit/master',
+          editUrl: 'https://github.com/VHDPlus/protop-website/edit/master',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/HendrikMennen/protop-website/edit/master/website/blog/',
+            'https://github.com/VHDPlus/protop-website/edit/master/website/blog/',
         },
         theme: {
           customCss: [require.resolve('bootstrap/dist/css/bootstrap.min.css'), require.resolve('./src/css/custom.css')],

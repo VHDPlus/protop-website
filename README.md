@@ -12,7 +12,7 @@ Changes to this repository will be built and uploaded to protop-solutions.com ev
 
 2. Clone repository
 ```bash
-git clone https://github.com/HendrikMennen/vhdplus-website.git
+git clone https://github.com/VHDPlus/protop-website.git
 ```
 
 3. Navigate to cloned directory and install node modules:
