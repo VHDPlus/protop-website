@@ -1,8 +1,8 @@
-Changes to this repository will be built and uploaded to protop-solutions.com every day at 0:00 UTC
+Changes to this repository are built daily at 1:00 UTC and uploaded to https://protop-solutions.com
 
 [![Node.js CI](https://github.com/VHDPlus/protop-website/actions/workflows/node.js.yml/badge.svg)](https://github.com/VHDPlus/protop-website/actions/workflows/node.js.yml)
 
-## Requirements
+## Requirements 
 
 - [Node.js](https://nodejs.org/en/download/) version >= 8.9 or above (which can be checked by running `node -v`). You can use [nvm](https://github.com/nvm-sh/nvm) for managing multiple Node versions on a single machine installed
 
