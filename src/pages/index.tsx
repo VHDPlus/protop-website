@@ -180,7 +180,7 @@ class App extends React.Component {
                                 data-aos-delay="50">Solutions</h1>
                             <p className={styles.promoSubtitle}
                                 data-aos="zoom-y-out"
-                                data-aos-delay="100">Your Partner for Software and Electronics Development</p>
+                                data-aos-delay="100">Professional Technology for Ordinary People</p>
                         </div>
 
                         <Link
@@ -195,6 +195,7 @@ class App extends React.Component {
                 </header>
 
                 <main className={styles.mainPart}>
+
                     <section className={styles.part}>
                         <Container data-aos="fade-up" data-aos-delay="100" className={styles.features}>
                             <Row className={classnames("justify-content-md-center stretchRow")}>
@@ -213,16 +214,16 @@ class App extends React.Component {
                                 <Col>
                                     <h2 className="text-center"><b>Trusted by Companies, Universities and Other Creative Minds</b></h2>
                                     <span className={classnames(styles.textPart, "text-center")}>
-                                        <b>Since 2019</b> we are working on <b>easy to use software and hardware</b> solutions.
+                                        <b>Since 2019</b> we are working on <b>easy to use software</b> solutions.
                                         We have already worked together with big companies and universities.
-                                        Also, a lot of different creative minds from <b>all over the world</b> are using our software and hardware solutions.
+                                        Also, a lot of different creative minds from <b>all over the world</b> are using our software solutions.
                                     </span>
                                 </Col>
                             </Row>
                         </Container>
 
                     </section>
-
+                                
                     <section className={styles.part}>
                         <Container>
                             <Row className="align-items-center" id="devAnchor">
@@ -231,7 +232,7 @@ class App extends React.Component {
                                     <span className={styles.textPart}>
                                         Your partner for all kinds of software development. <br />
                                         We are specialized on <b>user friendly cross platform software and web design</b>. <br /><br />
-                                        But we can adapt to all customers’ needs and also offer for example <b>app development or firmware development</b> for electronics devices.<br />
+                                        But we can adapt to all customers’ needs and also offer for example app development.<br />
                                         Let us convince you of the quality of our work and visit <b><a href="https://www.vhdplus.com/">vhdplus.com</a></b>.
                                     </span>
                                 </Col>
@@ -241,7 +242,7 @@ class App extends React.Component {
                             </Row>
                         </Container>
                     </section>
-
+{/*
                     <section className={styles.part}>
                         <Container data-aos="fade-up" data-aos-delay="100" className={styles.features}>
                             <Row className={classnames("justify-content-md-center stretchRow")}>
@@ -265,7 +266,7 @@ class App extends React.Component {
                             </Row>
                         </Container>
                     </section>
-
+                                
                     <section className={styles.part}>
                         <Container>
                             <Row className="align-items-center" id="pcbAnchor">
@@ -282,7 +283,7 @@ class App extends React.Component {
                             </Row>
                         </Container>
                     </section>
-
+*/}
                     <section className={styles.part}>
                         <Container>
                             <Row className="align-items-center" id="programAnchor">
@@ -315,7 +316,7 @@ class App extends React.Component {
                             </Row>
                         </Container>
                     </section>
-
+{/*
                     <section className={styles.part}>
                         <Container data-aos="fade-up" data-aos-delay="100" className={styles.features}>
                             <Row className="display-flex padding-vert--md">
@@ -329,7 +330,7 @@ class App extends React.Component {
                             </Row>
                         </Container>
                     </section>
-
+   */}
                     <section className={styles.part}>
                         <Container className={styles.featuresTwo}>
                             <Row className="display-flex padding-vert--md">
@@ -338,10 +339,11 @@ class App extends React.Component {
                                 </Col>
                             </Row>
                             <Row className={classnames("justify-content-md-center")}>
+                                
                                 <Col className={styles.card} data-aos="fade-up" data-aos-delay="100">
-                                    <img src="img/vhdp.svg" className={styles.cardImage} />
-                                    <span className={styles.cardTitle}>VHDPlus IDE</span>
-                                    <span className={styles.cardSubtitle}>Our own IDE used to make FPGA Programming easier</span>
+                                    <img src="img/WordPress.svg" className={styles.cardImage} />
+                                    <span className={styles.cardTitle}>Wordpress</span>
+                                    <span className={styles.cardSubtitle}>A powerful framework to create Blogs and Online-Shops</span>
                                 </Col>
                                 <Col className={styles.card} data-aos="fade-up" data-aos-delay="100">
                                     <img src="img/Avalonia.png" className={styles.cardImage} />
@@ -354,6 +356,7 @@ class App extends React.Component {
                                     <span className={styles.cardSubtitle}>Our go to JavaScript library to create beautiful websites</span>
                                 </Col>
                             </Row>
+                            {/*
                             <Row className={classnames("justify-content-md-center")}>
                                 <Col className={styles.card} data-aos="fade-up" data-aos-delay="100">
                                     <img src="img/AutoDesk.png" className={styles.cardImage} />
@@ -366,11 +369,12 @@ class App extends React.Component {
                                     <span className={styles.cardSubtitle}>Necessary for VHDPlus IDE to synthesize FPGA Designs</span>
                                 </Col>
                                 <Col className={styles.card} data-aos="fade-up" data-aos-delay="100">
-                                    <img src="img/WordPress.svg" className={styles.cardImage} />
-                                    <span className={styles.cardTitle}>Wordpress</span>
-                                    <span className={styles.cardSubtitle}>A powerful framework to create Blogs and Online-Shops</span>
+                                    <img src="img/vhdp.svg" className={styles.cardImage} />
+                                    <span className={styles.cardTitle}>VHDPlus IDE</span>
+                                    <span className={styles.cardSubtitle}>Our own IDE used to make FPGA Programming easier</span>
                                 </Col>
                             </Row>
+*/}
                         </Container>
                     </section>
 
@@ -399,7 +403,7 @@ class App extends React.Component {
                             </Container>
                         </form>
                     </section>
-
+                             
                 </main>
 
             </Layout>
