@@ -10,7 +10,7 @@ Eichenstraße 7<br></br>
 Germany<br></br>
 Phone: +49 (0)5481/845755<br></br>
 E-mail: <a href="mailto:info@protop-solutions.com">info@protop-solutions.com</a><br></br><br></br>
-Managing Directors: Leon Alexander Beier, Hendrik Menno Mennen<br></br><br></br>
+Managing Directors: Heinrich Beier, Hendrik Menno Mennen<br></br><br></br>
 Local court: Amtsgericht Steinfurt<br></br>
 Registration number: HRB 12577<br></br>
 VAT Reg. No.: DE 327 045 511<br></br><br></br>
